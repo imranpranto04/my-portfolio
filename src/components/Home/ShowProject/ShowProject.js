@@ -1,4 +1,5 @@
 import React from 'react';
+import './ShowProject.css';
 
 const ShowProject = ({ project }) => {
     return (

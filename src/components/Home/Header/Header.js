@@ -7,10 +7,10 @@ const Header = () => {
             <div className="row d-flex align-items-center text-white">
 
                 <div className="col-md-6">
-                    <h1>Here is my details</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error omnis neque molestiae! Excepturi, obcaecati!</p>
+                    <h1>Imran Hosen</h1>
+                    <h4>Junior Web Developer</h4>
 
-                    <button className="btn btn-success"><a className="text-white text-decoration-none" target="_blank" href="https://drive.google.com/uc?export=download&id=1GIFfH2Zxoqr4btaShfJtOf3X4Jt_e5io">Download Resume</a></button>
+                    <button className="btn btn-success mt-4"><a className="text-white text-decoration-none" target="_blank" href="https://drive.google.com/uc?export=download&id=1GIFfH2Zxoqr4btaShfJtOf3X4Jt_e5io">Download Resume</a></button>
 
                 </div>
 

@@ -7,7 +7,7 @@ const Blog = () => {
             <div className="text-center text-white">
                 <h2 >Blogs</h2>
             </div>
-            <div className="mt-4 text-center text-white">
+            <div className="mt-4 text-center text-danger">
                 <p>The Blog will be published very soon.</p>
             </div>
         </section>

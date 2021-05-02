@@ -23,3 +23,9 @@
 .card-body h4 {
     color: #545b62
 }
+
+@media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }

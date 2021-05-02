@@ -1,0 +1,23 @@
+.details{
+    font-size:20px;
+    padding: 10px
+}
+
+.details:hover{
+    color: tomato;
+}
+
+.skillBox{
+    border-left: 2px solid gray;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.skillBox:hover{
+    background-color: tomato;
+    border-radius: 20px;
+}
+
+.myIcon a{
+    margin: 20px;
+}
