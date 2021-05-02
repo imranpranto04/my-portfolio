@@ -2,6 +2,7 @@ import React from 'react';
 import car from '../../../images/car.png';
 import football from '../../../images/football.png';
 import ride from '../../../images/ride.png';
+import shop from '../../../images/shop.png';
 import ShowProject from '../ShowProject/ShowProject';
 
 const projectData = [
@@ -25,6 +26,13 @@ const projectData = [
         description: 'This site will make our journey easier. On this site, we can see some riders are waiting for giving transport service.',
         git: 'https://github.com/imranpranto04/destination-rider',
         website:'https://destination-rider.web.app/'
+    },
+    {
+        name: 'Smart Shop Service',
+        img: shop,
+        description: 'This is an e-commerce site. If you visit in this site you can see many types of products.',
+        git: 'https://github.com/imranpranto04/smart-shop-client',
+        website:'https://smart-shop-dd767.web.app/'
     }
 ]
 
