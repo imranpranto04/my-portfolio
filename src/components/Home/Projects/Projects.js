@@ -11,28 +11,32 @@ const projectData = [
         img: car,
         description: 'This site provides information about car services.',
         git: 'https://github.com/imranpranto04/car-mechanic-client',
-        website: 'https://car-mechanic-d8c26.web.app/'
+        website: 'https://car-mechanic-d8c26.web.app/',
+        technology:['React JS','Node Js','Express Js','MongoDb','Bootstrap', 'css','stripe','Firebase','Heroku'],
     },
     {
         name: 'UEFA Champions League',
         img: football,
         description: 'In this project, we can see information about some clubs',
         git: 'https://github.com/imranpranto04/football-leauge',
-        website: 'https://infallible-hypatia-d55be1.netlify.app/'
+        website: 'https://infallible-hypatia-d55be1.netlify.app/',
+        technology:['React JS','CSS','Bootstrap'],
     },
     {
         name: 'Destination Rider Service',
         img: ride,
         description: 'This site will make our journey easier. On this site, we can see some riders are waiting for giving transport service.',
         git: 'https://github.com/imranpranto04/destination-rider',
-        website:'https://destination-rider.web.app/'
+        website:'https://destination-rider.web.app/',
+        technology:['React JS','Node Js','Express Js','MongoDb','CSS','Bootstrap','Firebase'],
     },
     {
         name: 'Smart Shop Service',
         img: shop,
         description: 'This is an e-commerce site. If you visit in this site you can see many types of products.',
         git: 'https://github.com/imranpranto04/smart-shop-client',
-        website:'https://smart-shop-dd767.web.app/'
+        website:'https://smart-shop-dd767.web.app/',
+        technology:['React JS','Node Js','Express Js','MongoDb','CSS','Bootstrap','Firebase','Heroku'],
     }
 ]
 
