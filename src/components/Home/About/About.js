@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import pranto2 from '../../../images/pranto2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faLinkedin, faGitSquare } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGitSquare } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
     return (
@@ -32,8 +32,6 @@ const About = () => {
                     </div>
 
                     <div className="myIcon d-flex justify-content-center mt-3">
-
-                        <a target="blank" href="https://www.facebook.com/cricketer.pranto/"><FontAwesomeIcon icon={faFacebookSquare} size="3x" /></a>
 
                         <a target="blank" href="https://www.linkedin.com/in/imran-hosen/"><FontAwesomeIcon icon={faLinkedin} size="3x" /></a>
 

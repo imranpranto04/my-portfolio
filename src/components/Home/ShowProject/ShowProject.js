@@ -1,30 +1,64 @@
 import React from 'react';
 import './ShowProject.css';
+import { Carousel } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChrome, faGitSquare } from '@fortawesome/free-brands-svg-icons';
+
 
 const ShowProject = ({ project }) => {
 
-    const {technology} = project;
+    const { name, git, website, img1, img2, img3, description, technology } = project;
 
     return (
-        <div className="col-md-4 my-4">
-            <div className="card m-3 h-100" style={{ width: '24rem' }}>
-                <img className="img-fluid p-1" style={{ height: '200px' }} src={project.img} alt="Card image cap" />
-                <div className="card-body">
-                    <h5 className="card-title">{project.name}</h5>
-                    <p className="card-text">{project.description}</p>
+
+        <div className="container-fluid">
+
+            <div className="row my-5 d-flex align-items-center">
+
+                <div className="col-md-6 showProjects">
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100 img-fluid"
+                                src={img1}
+                                alt="First slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100 img-fluid"
+                                src={img2}
+                                alt="Second slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100 img-fluid"
+                                src={img3}
+                                alt="Third slide"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
 
-                <div className="card-body row">
-                    {
-                        technology.map(technology=> <div className="col-md-4">
-                            <button type="button" class="btn btn-outline-success m-1">{technology}</button>
+                <div className="col-md-6 text-white">
+                    <h4 className="text-danger mt-3"> <b>{name}</b></h4>
+                    <p>{description}</p>
+                    
+                   <div className="row">
+                   {
+                        technology.map(technology=> <div className="row m-2 d-flex align-items-center col-md-3">
+                            <button type="button" class="btn btn-outline-success"><strong>{technology}</strong></button>
                         </div>)
                     }
-                </div>
+                   </div>
 
-                <div className="card-body">
-                    <a href={project.git} target="_blank" className="card-link text-decoration-none text-success"><h5>Code link</h5></a>
-                    <a href={project.website} target="_blank" className="card-link text-decoration-none text-success"><h5>Website Preview link</h5></a>
+                   <div className="row d-block my-3 preview container">
+                        <a target="blank"  href={website}><FontAwesomeIcon className="icon" icon={faChrome} /> Website Preview</a>
+
+                        <a target="blank" href={git}><FontAwesomeIcon className="icon"  icon={faGitSquare} /> Github Code</a>
+                   </div>
+
                 </div>
             </div>
         </div>
